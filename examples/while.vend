@@ -1,0 +1,8 @@
+# laço mínimo
+set credito = 0c;
+set selecao = P0;
+
+enquanto sempre: {
+  print "loop";
+  troco;
+}

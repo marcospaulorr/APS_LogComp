@@ -1,0 +1,18 @@
+# Catálogo inicial (apenas sintaxe – sem semântica nesta etapa)
+set credito = 0c;
+set selecao = P0;
+
+inserir 100c;
+selecionar P1;
+
+se ha_credito e selecao_valida e tem_estoque P1 e preco_coberto P1: {
+  vender;
+  print "vendido";
+} senao: {
+  troco;
+}
+
+enquanto sempre: {
+  # laço principal
+  print credito;
+}

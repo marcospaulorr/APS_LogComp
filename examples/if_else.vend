@@ -1,0 +1,11 @@
+# if/else simples
+set credito = 100c;
+set selecao = P1;
+
+se ha_credito e selecao_valida e tem_estoque P1 e preco_coberto P1: {
+  print "ok";
+  vender;
+} senao: {
+  print "nope";
+  troco;
+}
