@@ -1,0 +1,8 @@
+; VendingMachineVM assembly
+START:
+    SETCRED 0
+    SETSEL P0
+    PRINTSTR "loop"
+    CHANGE
+    ; fim bloco
+    ; [WHILE SEMPRE] (versão mínima – sem saltos)

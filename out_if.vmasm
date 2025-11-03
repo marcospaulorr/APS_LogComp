@@ -1,0 +1,11 @@
+; VendingMachineVM assembly
+START:
+    SETCRED 100
+    SETSEL P1
+    PRINTSTR "ok"
+    VEND
+    ; fim bloco
+    PRINTSTR "nope"
+    CHANGE
+    ; fim bloco
+    ; [IF/ELSE] fim dos blocos THEN/ELSE
