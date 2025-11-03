@@ -1,0 +1,17 @@
+; VendingMachineVM assembly
+START:
+    SETCRED 200
+    SETSEL P0
+    INSERT 100
+    SELECT P1
+    PRINTSTR "iniciando venda"
+    VEND
+    PRINTCRED
+    ; fim bloco
+    PRINTSTR "nao foi possivel vender"
+    CHANGE
+    ; fim bloco
+    ; [IF/ELSE] fim dos blocos THEN/ELSE
+    PRINTSTR "loop"
+    ; fim bloco
+    ; [WHILE SEMPRE] (versão mínima – sem saltos)

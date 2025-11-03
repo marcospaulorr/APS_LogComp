@@ -1,18 +1,19 @@
-# Catálogo inicial (apenas sintaxe – sem semântica nesta etapa)
-set credito = 0c;
+# exemplo canônico da linguagem
+set credito = 200c;
 set selecao = P0;
 
 inserir 100c;
 selecionar P1;
 
 se ha_credito e selecao_valida e tem_estoque P1 e preco_coberto P1: {
+  print "iniciando venda";
   vender;
-  print "vendido";
+  print credito;
 } senao: {
+  print "nao foi possivel vender";
   troco;
 }
 
 enquanto sempre: {
-  # laço principal
-  print credito;
+  print "loop";
 }

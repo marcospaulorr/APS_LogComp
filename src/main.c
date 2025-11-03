@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
   if (!yyin) { perror("abrindo entrada"); return 1; }
 
   FILE* out = fopen(outpath, "w");
-  if (!out) { perror("abrindo saida"); return 1; }
+  if (!out) { perror("abrindo saida"); fclose(yyin); return 1; }
   cg_set_output(out);
 
   int rc = yyparse();
